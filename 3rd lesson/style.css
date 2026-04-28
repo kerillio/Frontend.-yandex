@@ -1,0 +1,28 @@
+body, h1 {
+    margin: 0%;
+}
+
+body {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+header {
+    height: 99vh;
+    /* width: 500px; */
+    background-color: forestgreen;
+}
+
+div {
+    background-color: maroon;
+    background-image: url(https://code.s3.yandex.net/web-code/images/freetrack/03/cover.png);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+ 
+h1 {
+    padding-top: 270px;
+    font-size: 64px;
+    color: white;
+    text-transform: uppercase;
+}
