@@ -1,0 +1,83 @@
+
+<!-- saved from url=(0149)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/03-addition-to-box-model/05-relative-fields-size/example-02/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Резиновая карточка</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(1).css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  margin: 0;
+  padding: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+.card {
+  width: 50%;
+  max-height: 60%;
+  border: 1px solid black;
+}
+
+.card-cover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Сделали блок с фоновым изображением резиновым и квадратным */
+  padding-bottom: 100%;
+  background-image: url(./images/don_quijote.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-autor {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 8px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
+  background-color: #000;
+}
+
+.card-quote {
+  margin: 0;
+  border-top: 1px solid black;
+  padding: 20px;
+  background-color: #ffc802;
+}
+
+.card-quote p {
+  margin: 0;
+}
+</style></head>
+  <body>
+    <article class="card">
+      <div class="card-cover">
+        <h2 class="card-autor">Хитроумный идальго</h2>
+      </div>
+      <blockquote class="card-quote">
+        <p>
+          «Свобода, Санчо, есть одна из самых драгоценных щедрот, которые небо
+          изливает на людей: с нею не могут сравниться никакие сокровища — ни
+          те, что таятся в недрах земли, ни те, что сокрыты на дне морском»
+        </p>
+      </blockquote>
+    </article>
+  
+
+</body></html>
