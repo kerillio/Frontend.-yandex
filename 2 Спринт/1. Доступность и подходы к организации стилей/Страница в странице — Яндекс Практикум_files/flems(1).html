@@ -1,0 +1,196 @@
+
+<!-- saved from url=(0126)https://sandbox.practicum-team.ru/tasks/02-interactivity-and-accessibility/02-frames/02-page-in-page/example-02/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(1).css">
+    <title>Производитель и распространитель цветных мелков</title>
+  <style id="styles/shop.css">.shop-title {
+  font-weight: 800;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: calc(50% - 25px);
+  border: 1px solid #000;
+  background-color: #ffc802;
+}
+
+.card-image {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.card-title {
+  margin: 20px 20px 40px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.card-text {
+  margin: 0 20px 30px;
+}
+
+.card-price {
+  margin-top: auto;
+}
+
+.card-price {
+  align-self: center;
+  font-size: 2em;
+}
+
+.card-button {
+  margin: 30px 20px 20px;
+  border: 1px solid #000;
+  padding: 10px 65px;
+  color: #000;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: #ffc802;
+}
+
+.card-button:hover {
+  box-shadow: inset 0 0 0 100px rgb(0 0 0 / 0.15);
+  cursor: pointer;
+}
+
+.card-button:focus {
+  outline: 2px solid #000;
+  outline-offset: 0;
+}
+
+.card-button[disabled] {
+  opacity: 0.6;
+}
+</style><style id="styles/style.css">body {
+  min-width: 850px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  position: relative;
+  z-index: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  text-align: center;
+  background: url(./images/bkg.jpg) no-repeat center / cover;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgb(0 0 0 / 0.8);
+}
+
+.logo {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  color: #5f0dee;
+}
+
+.cta {
+  padding: 25px;
+  color: #fff;
+  background-color: #000;
+}
+
+.cta-text {
+  margin: 0;
+}
+
+.cta-button {
+  margin-top: 30px;
+  border: 1px solid #000;
+  padding: 10px 65px;
+  color: #000;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: #ffc802;
+}
+
+.cta-button:hover {
+  box-shadow: inset 0 0 0 100px rgb(0 0 0 / 0.15);
+  cursor: pointer;
+}
+
+.cta-button:focus {
+  outline: 2px solid #000;
+  outline-offset: 0;
+}
+
+.cta-button[disabled] {
+  opacity: 0.6;
+}
+
+.title {
+  margin: 100px 0;
+  font-weight: 800;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+/* Тут напишите правило для фрейма */
+</style></head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <a href="https://sandbox.practicum-team.ru/" class="logo">Shiny flakes</a>
+        <h1 class="title">Производитель и распространитель цветных мелков</h1>
+        <p class="description">Дарим радость взрослым и детям! ✨</p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="cta">
+        <div class="wrapper">
+          <p class="cta-text">
+            Наши менеджеры готовы предложить вам гибкие условия для оптовых
+            закупок. С радостью сотрудничаем со школами и муниципальными
+            заведениями. Умеем работать с бюджетными деньгами. Вся отчётность
+            будет безупречна.
+          </p>
+          <button class="cta-button">Позвонить</button>
+        </div>
+      </div>
+      <div class="wrapper">
+        <p class="text">
+          Если вы уже жить не можете без наших мелков, то ознакомьтесь с
+          актуальным ассортиментом:
+        </p>
+        <iframe src="./shop.html"></iframe>
+      </div>
+    </main>
+  
+
+</body></html>
